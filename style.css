@@ -1,0 +1,69 @@
+/* body styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* common styles */
+
+.half-width{
+    width: 50%;
+}
+
+
+
+/* header section starts */
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 140px 110px;
+}
+.container{
+    background-color: #161616;
+    width: 80%;
+    border-radius: 30px;
+    padding: 100px 106px;
+    display: flex;
+    
+}
+
+.header-texts h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    line-height: 80px;
+    border-bottom: 0;
+    
+}
+.header-texts p {
+    color: white;
+    font-size: 16px;
+    margin: 50px 0 ;
+
+}
+.header-texts a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #D61C4E;
+    padding: 16px 25px;
+    border-radius: 6px;
+}
+.header-image{
+    position: absolute;
+    width: 581px;
+    height: 613px;
+    left: 740px;
+    top: 126px;
+   
+   
+}
+a i{
+    margin-left: 8px;
+    font-weight: normal;
+}
+
+
+
+/* header section ends */
