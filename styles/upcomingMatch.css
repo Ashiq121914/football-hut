@@ -5,7 +5,18 @@ body{
 }
 
 /* common styles */
-
+/* animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 
@@ -21,7 +32,9 @@ body{
     margin: 50px 140px 110px;
 }
 .container{
-    background-color: #161616;
+    background: linear-gradient(-45deg,  #161616,#D61C4E);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
     width: 90%;
     border-radius: 30px;
     padding: 100px 106px 0px 106px;
@@ -149,6 +162,9 @@ a i{
     font-weight: 400;
     font-size: 16px;
     color: #4D4D4D;
+}
+#view-all{
+    display: none;
 }
 
 
@@ -349,6 +365,107 @@ footer li a{
    
     
 }
+
+/* for tablets */
+@media screen and (min-width: 688px) and (max-width:992px) {
+    /**********************
+ header section starts 
+ ***********************/
+header{
+    width: 91%;
+    margin:  0 auto;
+}
+.container{
+    margin-top: 50px;
+    padding: 41px 40px;
+    
+}
+
+.header-texts h1{
+    font-size: 40px;
+    line-height: 50px;  
+}
+
+.header-image{
+    position: absolute;
+    top: 160.8px;
+    left: 435px;
+}
+.header-image img{
+    width: 350px;
+    height: 350px;
+}
+
+
+/*********************
+ header section ends 
+ *********************/
+
+
+
+/********************
+ main section starts 
+ ********************/
+ /* side navigation section */
+
+.navigation-section{
+    width: 80%;
+    flex-direction: column;
+    margin:0 auto;
+}
+.side-nav-bar{
+    background-color:transparent; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+/* match schadule section */
+.match-schadule{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+
+
+
+
+#view-all{
+    display: block;
+    margin: 50px auto 20px;
+}
+#view-all a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 30px;
+    background-color: #D61C4E;
+    border-radius: 10px;
+    
+    
+}
+
+
+
+/*****************
+main section ends 
+*******************/
+
+
+
+
+
+   
+}
+
+
+
+
+
+/* responsive design ends */
 
 
 /* responsive design ends */
